@@ -2,6 +2,7 @@ const addressService = require('../services/addressService');
 const { successResponse } = require('../utils/response');
 
 class AddressController {
+  
   async getAddresses(req, res, next) {
     try {
       const addresses = await addressService.getUserAddresses(req.user.id);

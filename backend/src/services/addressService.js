@@ -26,18 +26,9 @@ class AddressService {
   }
 
   async addAddress(userId, data) {
-    const {
-      fullName,
-      phone,
-      addressLine1,
-      addressLine2,
-      city,
-      state,
-      country = 'India',
-      postalCode,
-      addressType = 'HOME',
-      isDefault = false,
-    } = data;
+
+    const {fullName,phone,addressLine1,addressLine2,city,state,postalCode,addressType,isDefault} = data;
+    
 
     if (!fullName || !phone || !addressLine1 || !city || !state || !postalCode) {
       const error = new Error('Missing required address fields.');

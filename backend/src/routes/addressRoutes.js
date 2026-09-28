@@ -5,7 +5,7 @@ const { authenticate } = require('../middleware/auth');
 
 router.use(authenticate);
 
-router.get('/', addressController.getAddresses);
+router.get('/', authenticate,addressController.getAddresses);
 router.post('/', addressController.addAddress);
 router.put('/:id', addressController.updateAddress);
 router.delete('/:id', addressController.deleteAddress);
