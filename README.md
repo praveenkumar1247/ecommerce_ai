@@ -4,7 +4,7 @@ A complete, high-performance, full-stack e-commerce web application built end-to
 
 Features atomic transactional stock reservations to prevent race-condition overselling, server-side validated pricing, local file storage with Multer, JWT authentication with role-based access control, customer order history, and a rich administration console.
 
----
+--
 
 ## 1. Technology Stack
 
